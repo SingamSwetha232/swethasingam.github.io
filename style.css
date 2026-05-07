@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
 
   background: #020617;
@@ -25,9 +30,11 @@ body {
 
   align-items: center;
 
-  padding: 25px 60px;
+  padding: 15px 50px;
 
   border-bottom: 1px solid rgba(255,255,255,0.1);
+
+  height: 90px;
 }
 
 /* LOGO */
@@ -48,7 +55,7 @@ body {
 
 .logo-section h2 {
 
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .logo-section p {
@@ -57,7 +64,7 @@ body {
 
   letter-spacing: 3px;
 
-  font-size: 12px;
+  font-size: 11px;
 
   margin-top: 5px;
 }
@@ -68,7 +75,7 @@ body {
 
   display: flex;
 
-  gap: 40px;
+  gap: 35px;
 
   list-style: none;
 }
@@ -79,7 +86,14 @@ body {
 
   color: white;
 
-  font-size: 20px;
+  font-size: 18px;
+
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+
+  color: #a855f7;
 }
 
 .active {
@@ -88,7 +102,7 @@ body {
 
   border-bottom: 3px solid #a855f7;
 
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
 
 /* SOCIAL */
@@ -99,14 +113,21 @@ body {
 
   align-items: center;
 
-  gap: 25px;
+  gap: 20px;
 }
 
 .social-icons i {
 
-  font-size: 28px;
+  font-size: 24px;
 
   cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.social-icons i:hover {
+
+  color: #a855f7;
 }
 
 /* CONTACT BUTTON */
@@ -115,16 +136,25 @@ body {
 
   border: 1px solid #a855f7;
 
-  padding: 15px 25px;
+  padding: 12px 22px;
 
-  border-radius: 15px;
+  border-radius: 12px;
 
   color: #a855f7;
 
   text-decoration: none;
+
+  transition: 0.3s;
 }
 
-/* HERO */
+.contact-btn:hover {
+
+  background: #a855f7;
+
+  color: white;
+}
+
+/* HERO SECTION */
 
 .hero-section {
 
@@ -134,14 +164,16 @@ body {
 
   align-items: center;
 
-  padding: 100px 80px;
+  padding: 40px 70px;
+
+  min-height: calc(100vh - 90px);
 }
 
-/* LEFT */
+/* LEFT SIDE */
 
 .hero-left {
 
-  width: 50%;
+  width: 52%;
 }
 
 .welcome {
@@ -150,14 +182,14 @@ body {
 
   letter-spacing: 4px;
 
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .hero-left h1 {
 
-  font-size: 100px;
+  font-size: 72px;
 
   line-height: 1.1;
 }
@@ -173,66 +205,84 @@ body {
 
 .hero-left h2 {
 
-  margin-top: 20px;
+  margin-top: 15px;
 
-  font-size: 40px;
+  font-size: 28px;
 
   font-weight: normal;
 }
 
 .description {
 
-  margin-top: 30px;
+  margin-top: 20px;
 
   color: #9ca3af;
 
-  font-size: 28px;
+  font-size: 20px;
 
-  line-height: 1.6;
+  line-height: 1.5;
+
+  max-width: 650px;
 }
 
 /* BUTTONS */
 
 .hero-buttons {
 
-  margin-top: 50px;
+  margin-top: 35px;
 
   display: flex;
 
-  gap: 30px;
+  gap: 20px;
 }
 
 .primary-btn {
 
   background: linear-gradient(to right, #9333ea, #d946ef);
 
-  padding: 20px 35px;
+  padding: 16px 28px;
 
-  border-radius: 15px;
+  border-radius: 12px;
 
   text-decoration: none;
 
   color: white;
 
-  font-size: 22px;
+  font-size: 18px;
+
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+
+  transform: translateY(-3px);
+
+  box-shadow: 0px 0px 20px rgba(168,85,247,0.5);
 }
 
 .secondary-btn {
 
   border: 1px solid #a855f7;
 
-  padding: 20px 35px;
+  padding: 16px 28px;
 
-  border-radius: 15px;
+  border-radius: 12px;
 
   text-decoration: none;
 
   color: white;
 
-  font-size: 22px;
+  font-size: 18px;
+
+  transition: 0.3s;
 }
 
-/* RIGHT */
+.secondary-btn:hover {
+
+  background: #a855f7;
+}
+
+/* RIGHT SIDE */
 
 .hero-right {
 
@@ -241,41 +291,43 @@ body {
 
 .circle-glow {
 
-  width: 500px;
+  width: 320px;
 
-  height: 500px;
+  height: 320px;
 
   background: rgba(168,85,247,0.3);
 
   border-radius: 50%;
 
-  filter: blur(100px);
+  filter: blur(90px);
 
   position: absolute;
 
-  top: 50px;
+  top: 40px;
 
-  left: 50px;
+  left: 40px;
 }
 
 .hero-logo {
 
-  width: 500px;
+  width: 340px;
 
   position: relative;
 }
 
-/* TECHNOLOGIES */
+/* TECHNOLOGIES SECTION */
 
 .tech-section {
 
-  margin: 50px 60px;
+  margin: 0px 60px 30px;
 
   border: 1px solid rgba(255,255,255,0.1);
 
-  border-radius: 25px;
+  border-radius: 20px;
 
-  padding: 40px;
+  padding: 25px;
+
+  background: rgba(255,255,255,0.02);
 }
 
 .tech-section h3 {
@@ -286,7 +338,7 @@ body {
 
   letter-spacing: 4px;
 
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .tech-grid {
@@ -295,19 +347,148 @@ body {
 
   grid-template-columns: repeat(8, 1fr);
 
-  gap: 30px;
+  gap: 20px;
 
   text-align: center;
 }
 
+.tech-item {
+
+  transition: 0.3s;
+}
+
+.tech-item:hover {
+
+  transform: translateY(-5px);
+}
+
 .tech-item i {
 
-  font-size: 60px;
+  font-size: 40px;
 
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+
+  color: #d946ef;
 }
 
 .tech-item p {
 
-  font-size: 20px;
+  font-size: 16px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+
+  .hero-left h1 {
+
+    font-size: 58px;
+  }
+
+  .hero-left h2 {
+
+    font-size: 24px;
+  }
+
+  .description {
+
+    font-size: 18px;
+  }
+
+  .hero-logo {
+
+    width: 280px;
+  }
+
+  .circle-glow {
+
+    width: 260px;
+    height: 260px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .navbar {
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    height: auto;
+
+    padding: 20px;
+  }
+
+  .hero-section {
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 40px 20px;
+  }
+
+  .hero-left {
+
+    width: 100%;
+  }
+
+  .hero-right {
+
+    margin-top: 40px;
+  }
+
+  .hero-buttons {
+
+    justify-content: center;
+  }
+
+  .tech-grid {
+
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+
+  .hero-left h1 {
+
+    font-size: 42px;
+  }
+
+  .hero-left h2 {
+
+    font-size: 20px;
+  }
+
+  .description {
+
+    font-size: 16px;
+  }
+
+  .nav-links {
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  .tech-grid {
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-logo {
+
+    width: 220px;
+  }
+
+  .circle-glow {
+
+    width: 200px;
+    height: 200px;
+  }
 }
