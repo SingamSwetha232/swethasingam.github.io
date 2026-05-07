@@ -1,4 +1,4 @@
-/* GENERAL */
+/* ================= GENERAL ================= */
 
 * {
   margin: 0;
@@ -20,7 +20,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 
 .navbar {
 
@@ -32,12 +32,12 @@ body {
 
   padding: 15px 50px;
 
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 
   height: 90px;
 }
 
-/* LOGO */
+/* ================= LOGO ================= */
 
 .logo-section {
 
@@ -50,12 +50,14 @@ body {
 
 .logo {
 
-  width: 90px;
+  width: 85px;
 }
 
 .logo-section h2 {
 
   font-size: 20px;
+
+  letter-spacing: 1px;
 }
 
 .logo-section p {
@@ -69,7 +71,7 @@ body {
   margin-top: 5px;
 }
 
-/* NAV LINKS */
+/* ================= NAV LINKS ================= */
 
 .nav-links {
 
@@ -105,7 +107,7 @@ body {
   padding-bottom: 8px;
 }
 
-/* SOCIAL */
+/* ================= SOCIAL ================= */
 
 .social-icons {
 
@@ -116,11 +118,16 @@ body {
   gap: 20px;
 }
 
+.social-icons a {
+
+  color: white;
+
+  text-decoration: none;
+}
+
 .social-icons i {
 
-  font-size: 24px;
-
-  cursor: pointer;
+  font-size: 22px;
 
   transition: 0.3s;
 }
@@ -130,7 +137,7 @@ body {
   color: #a855f7;
 }
 
-/* CONTACT BUTTON */
+/* ================= CONTACT BUTTON ================= */
 
 .contact-btn {
 
@@ -140,9 +147,7 @@ body {
 
   border-radius: 12px;
 
-  color: #a855f7;
-
-  text-decoration: none;
+  color: #a855f7 !important;
 
   transition: 0.3s;
 }
@@ -151,10 +156,10 @@ body {
 
   background: #a855f7;
 
-  color: white;
+  color: white !important;
 }
 
-/* HERO SECTION */
+/* ================= HERO SECTION ================= */
 
 .hero-section {
 
@@ -164,16 +169,16 @@ body {
 
   align-items: center;
 
-  padding: 40px 70px;
+  gap: 50px;
 
-  min-height: calc(70vh - 60px);
+  padding: 20px 70px 40px;
 }
 
-/* LEFT SIDE */
+/* ================= LEFT SIDE ================= */
 
 .hero-left {
 
-  width: 52%;
+  width: 45%;
 }
 
 .welcome {
@@ -182,7 +187,7 @@ body {
 
   letter-spacing: 4px;
 
-  margin-bottom: 25px;
+  margin-bottom: 12px;
 
   font-size: 16px;
 }
@@ -194,6 +199,8 @@ body {
   line-height: 1.1;
 }
 
+/* ================= GRADIENT TEXT ================= */
+
 .gradient-text {
 
   background: linear-gradient(to right, #c084fc, #d946ef);
@@ -203,18 +210,22 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+/* ================= SUBTITLE ================= */
+
 .hero-left h2 {
 
-  margin-top: 15px;
+  margin-top: 8px;
 
   font-size: 28px;
 
   font-weight: normal;
 }
 
+/* ================= DESCRIPTION ================= */
+
 .description {
 
-  margin-top: 20px;
+  margin-top: 12px;
 
   color: #9ca3af;
 
@@ -225,11 +236,11 @@ body {
   max-width: 650px;
 }
 
-/* BUTTONS */
+/* ================= BUTTONS ================= */
 
 .hero-buttons {
 
-  margin-top: 35px;
+  margin-top: 22px;
 
   display: flex;
 
@@ -282,7 +293,82 @@ body {
   background: #a855f7;
 }
 
-/* RIGHT SIDE */
+/* ================= STICKY NOTE ================= */
+
+.sticky-note {
+
+  position: relative;
+
+  width: 340px;
+
+  background: #fff3b0;
+
+  color: #111827;
+
+  padding: 40px 30px;
+
+  border-radius: 10px;
+
+  transform: rotate(-3deg);
+
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.4);
+
+  font-family: "Comic Sans MS", cursive;
+
+  margin-right: 20px;
+}
+
+/* ================= PIN ================= */
+
+.pin {
+
+  width: 22px;
+
+  height: 22px;
+
+  background: #a855f7;
+
+  border-radius: 50%;
+
+  position: absolute;
+
+  top: -10px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+}
+
+/* ================= NOTE LIST ================= */
+
+.sticky-note ul {
+
+  list-style: none;
+}
+
+.sticky-note li {
+
+  font-size: 20px;
+
+  margin-bottom: 22px;
+
+  line-height: 1.5;
+
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+
+  padding-bottom: 10px;
+}
+
+.sticky-note li:last-child {
+
+  margin-bottom: 0;
+
+  border-bottom: none;
+}
+
+/* ================= RIGHT SIDE ================= */
 
 .hero-right {
 
@@ -310,18 +396,20 @@ body {
 
 .hero-logo {
 
-  width: 340px;
+  width: 280px;
+
+  border-radius: 15px;
 
   position: relative;
 }
 
-/* TECHNOLOGIES SECTION */
+/* ================= TECHNOLOGIES ================= */
 
 .tech-section {
 
   margin: 0px 60px 30px;
 
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.08);
 
   border-radius: 20px;
 
@@ -376,38 +464,193 @@ body {
   font-size: 16px;
 }
 
-/* RESPONSIVE */
+/* ================= PAGE HERO ================= */
+
+.page-hero {
+
+  text-align: center;
+
+  padding: 50px 20px 30px;
+}
+
+.page-description {
+
+  color: #9ca3af;
+
+  font-size: 20px;
+
+  margin-top: 15px;
+}
+
+/* ================= BLOGS ================= */
+
+.blogs-container {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 35px;
+
+  padding: 40px 80px 80px;
+}
+
+/* ================= BLOG CARD ================= */
+
+.blog-card {
+
+  background: rgba(255,255,255,0.03);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  transition: 0.3s;
+}
+
+.blog-card:hover {
+
+  transform: translateY(-8px);
+
+  border-color: #a855f7;
+
+  box-shadow: 0px 0px 25px rgba(168,85,247,0.2);
+}
+
+/* ================= BLOG COVER ================= */
+
+.blog-cover {
+
+  width: 100%;
+
+  height: 240px;
+
+  object-fit: cover;
+}
+
+/* ================= BLOG CONTENT ================= */
+
+.blog-content-area {
+
+  padding: 30px;
+}
+
+.blog-content-area h2 {
+
+  font-size: 28px;
+
+  margin-bottom: 18px;
+}
+
+.blog-content-area p {
+
+  color: #9ca3af;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+
+  margin-bottom: 25px;
+}
+
+.blog-content-area a {
+
+  color: #c084fc;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+  font-weight: bold;
+}
+
+.blog-content-area a:hover {
+
+  color: white;
+}
+
+/* ================= BLOG PAGE ================= */
+
+.blog-page {
+
+  max-width: 900px;
+
+  margin: auto;
+
+  padding: 80px 20px;
+}
+
+.back-btn {
+
+  display: inline-block;
+
+  margin-bottom: 40px;
+
+  color: #c084fc;
+
+  text-decoration: none;
+}
+
+.blog-page h1 {
+
+  font-size: 60px;
+
+  margin-bottom: 20px;
+}
+
+.blog-date {
+
+  color: #9ca3af;
+
+  margin-bottom: 50px;
+}
+
+.blog-content h2 {
+
+  color: #c084fc;
+
+  margin-bottom: 20px;
+}
+
+.blog-content p {
+
+  color: #d1d5db;
+
+  font-size: 20px;
+
+  line-height: 1.8;
+}
+
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 1200px) {
 
-  .hero-left h1 {
+  .hero-section {
 
-    font-size: 58px;
+    flex-direction: column;
+
+    text-align: center;
   }
 
-  .hero-left h2 {
+  .hero-left {
 
-    font-size: 24px;
+    width: 100%;
   }
 
-  .description {
+  .hero-buttons {
 
-    font-size: 18px;
+    justify-content: center;
   }
 
-  .hero-logo {
+  .blogs-container {
 
-    width: 280px;
-  }
-
-  .circle-glow {
-
-    width: 260px;
-    height: 260px;
+    grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
 
   .navbar {
 
@@ -420,60 +663,26 @@ body {
     padding: 20px;
   }
 
-  .hero-section {
-
-    flex-direction: column;
-
-    text-align: center;
-
-    padding: 40px 20px;
-  }
-
-  .hero-left {
-
-    width: 100%;
-  }
-
-  .hero-right {
-
-    margin-top: 40px;
-  }
-
-  .hero-buttons {
-
-    justify-content: center;
-  }
-
-  .tech-grid {
-
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-
-  .hero-left h1 {
-
-    font-size: 42px;
-  }
-
-  .hero-left h2 {
-
-    font-size: 20px;
-  }
-
-  .description {
-
-    font-size: 16px;
-  }
-
   .nav-links {
-
-    gap: 15px;
 
     flex-wrap: wrap;
 
     justify-content: center;
+  }
+
+  .hero-left h1 {
+
+    font-size: 52px;
+  }
+
+  .hero-left h2 {
+
+    font-size: 22px;
+  }
+
+  .description {
+
+    font-size: 18px;
   }
 
   .tech-grid {
@@ -481,14 +690,13 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .hero-logo {
+  .blogs-container {
 
-    width: 220px;
+    padding: 20px;
   }
 
-  .circle-glow {
+  .sticky-note {
 
-    width: 200px;
-    height: 200px;
+    width: 100%;
   }
 }
