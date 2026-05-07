@@ -166,7 +166,7 @@ body {
 
   padding: 40px 70px;
 
-  min-height: auto;
+  min-height: calc(80vh - 70px);
 }
 
 /* LEFT SIDE */
